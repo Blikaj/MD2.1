@@ -33,6 +33,8 @@ public class MainActivity4 extends AppCompatActivity {
         switch (v.getId()) {
             case R.id.btnActTwo:
                 Intent  intent = new Intent(this, MainActivity2.class);
+                String s = "Empty";
+                intent.putExtra("nameSend", s.toString());
                 startActivity(intent);
                 break;
             default:
